@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //khai báo biến a và b
+    let a ;
+    console.log(a);
+    let b ;
+    console.log(b);
+    let x;
+// hàm số tính nghiệm pt bậc nhất
+    function ptb1() {
+        //kiểm tra điều kiện a khác 0
+ if (a==0){
+     return false;
+ }
+     //tìm nghiệm nếu a khác 0
+ else{
+ x=-b/a;
+ return true;
+ }
+    }
+    //nhập a và b theo yêu cầu đề bài
+    a=5;
+    b=8;
+
+// thông báo ra màn hình
+    if (ptb1() === true){alert('Kết quả là '+ x)}
+  if(ptb1() === false){alert('Vui lòng nhập lại a và b')}
+
+
+</script>
+</html>

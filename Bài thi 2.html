@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i;
+    let a =[1,2,3,4,5,6,7,8,9];
+    console.log(a);
+    let b = +prompt('Hãy nhập số cần kiểm tra');
+    console.log(b);
+
+
+    function test(a,b) {
+        for (i = 0; i < a.length; i++) {
+            if (a[i] === b) {
+                console.log(a[i]);
+                return true;
+            }
+        } return false;
+    }
+
+    if (test(a,b) === true){alert('Số bạn vừa nhập có trong mảng')}
+    if (test(a,b) === false){alert('Số bạn vừa nhập không có nha')}
+
+
+</script>
+
+</body>
+</html>
